@@ -1,0 +1,5 @@
+<li>
+  <%= f.hidden_field :zoneable_type, :value => "PostcodeList" %>
+  <%= f.collection_select(:zoneable_id, @postcode_lists, :id, :name, :include_blank => true) %>
+  <%= remove_nested f %>
+</li>

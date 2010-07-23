@@ -1,0 +1,14 @@
+<% f.field_container :name do %>
+  <%= f.label :name, t('name') %><br/>
+  <%= f.text_field :name %>
+<% end %>
+
+<% f.field_container :postcodes do %>
+  <%= f.label :postcodes, t('postcode_list') %><br/>
+  <%= f.text_area :postcodes %>
+<% end %>
+
+<% f.field_container :price do %>
+  <%= f.label :price, t('delivery_price') %><br/>
+  <%= f.text_field :price %>
+<% end %>

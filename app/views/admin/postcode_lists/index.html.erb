@@ -1,0 +1,27 @@
+<h1>Postcode Lists</h1>
+
+<table class="index">
+  <thead>
+    <tr>
+      <th><%= t('name') %></th>
+      <th><%= t('action') %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @postcode_lists.each do |pl| %>
+      <tr>
+        <td><%= pl.name %></td>
+        <td class="actions">
+          <%= link_to_with_icon 'edit', t('edit'), edit_admin_postcode_list_url(pl) %>
+          &nbsp;
+          <%= link_to_with_icon 'delete', t('delete'), object_url(pl), :method => :delete %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<p>
+  <%= button_link_to t('new_postcode_list'), new_admin_postcode_list_url, :icon => 'add' %>
+</p>
+
