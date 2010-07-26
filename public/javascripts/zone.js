@@ -3,6 +3,8 @@ $j(function() {
     show_country();
   } else if ($j('#state_based').attr('checked')) {
     show_state();
+  } else if ($j('#postcode_list_based').attr('checked')){
+    show_postcode_list();
   } else {        
     show_zone();
   }

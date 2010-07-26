@@ -4,3 +4,6 @@ en-GB:
   postcode_lists: "Postcode Lists"
   delivery_price: "Override Delivery Price"
   manage_postcodes: "Manage Postcodes"
+  add_postcode_list: "Add Postcode List"
+  postcode_based: "Postcode Based"
+  edit_postcode_list: "Edit Postcode List"

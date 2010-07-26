@@ -7,6 +7,10 @@ class PostcodeList < ActiveRecord::Base
     self.postcodes
   end
 
+  def <=>(other)
+    name <=> other.name
+  end
+
   def include?(postcode)
     postcodes = self.postcodes.split(',')
     postcodes.any? {|p| postcode.upcase.starts_with?(p) }
